@@ -1,0 +1,18 @@
+/** UTILS **/
+@import 'utils/_var.scss';
+@import 'utils/_mixins.scss';
+@import 'utils/_fonts.scss';
+@import 'utils/icons.scss';
+/** GENERAL **/
+@import 'general/_reset.scss';
+@import 'general/_main.scss';
+/** COMPONENTS **/
+@import 'components/_header.scss';
+@import 'components/_logo.scss';
+@import 'components/_nav.scss';
+@import 'components/_footer.scss';
+/** PAGES **/
+@import 'page/_homepage.scss';
+@import 'page/_stores.scss';
+@import 'page/_product.scss';
+@import 'page/_sign.scss';

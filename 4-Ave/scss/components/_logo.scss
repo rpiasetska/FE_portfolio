@@ -1,0 +1,12 @@
+.logo {
+
+    &-link {
+        @include text-styles(24px, 400, $black01);
+
+        text-transform: uppercase;
+    }
+
+    &-bold {
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,89 @@
+.main {
+    font-family: 'Montserrat', sans-serif;
+
+    &-link,
+    &-button {
+        @include text-styles(16px, 400, $grey02);
+
+        text-transform: uppercase;
+        border: 1px solid $grey02;
+        padding: 20px 30px;
+        background: $white01;
+        display: inline-block;
+
+        &:hover {
+            background: $blue01;
+            color: $white01;
+            border: 1px solid $blue01;
+        }
+    }
+
+    &-input {
+        @include text-styles(15px, 300, $black01);
+        border: 1px solid $grey06;
+        background: $white01;
+        padding: 12px 10px;
+        width: 100%;
+        margin-top: 35px;
+
+        &::placeholder {
+            color: $grey03;
+        }
+
+        &:focus {
+            border: 1px solid $red01;
+            background: $white02;
+        }
+    }
+
+    &-select {
+        @include text-styles(13px, 300, $grey03);
+
+        border: 1px solid $grey11;
+        background: $white01;
+        padding: 15px 10px;
+        border-radius: 0;
+    }
+
+    &-banner {
+        background: url(../img/banner.jpg) center no-repeat;
+        background-size: cover;
+        height: 450px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-content {
+            text-align: center;
+        }
+
+        &-title {
+            @include text-styles(48px, 300, $white01);
+
+            margin-bottom: 50px;
+
+            &-decoration {
+                font-weight: 700;
+            }
+        }
+
+        &-description {
+            @include text-styles(30px, 400, $white01);
+        }
+    }
+}
+
+.currency {
+    font-size: 0.5em;
+}
+
+.icon-shopping-cart-black-shape,
+.icon-heart,
+.icon-location,
+.icon-tel,
+.icon-mail,
+.icon-link,
+.icon-time {
+    margin-right: 10px;
+}

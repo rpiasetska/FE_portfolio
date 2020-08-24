@@ -1,0 +1,108 @@
+.footer {
+    background: $grey05;
+
+    &-inner {
+        @include site_width($site_width);
+        padding: 0 15%;
+    }
+
+    &-information {
+        display: flex;
+        padding: 65px 0 50px 0;
+
+        &-block {
+            width: 20%;
+        }
+
+        &-title {
+            @include text-styles(13px, 400, $grey04);
+
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        &-item {
+            margin: 10px 0;
+        }
+
+        &-link {
+            @include text-styles(14px, 300, $grey02);
+
+            &:hover {
+                color: $blue01;
+            }
+        }
+        
+        &-details {
+            @include text-styles(14px, 300, $grey02);
+        }
+    }
+
+    &-public {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 55px;
+
+        &-award {
+            @include text-styles(36px, 300, $white01);
+            padding: 60px 0;
+            width: 48.5%;
+            background: $black03;
+            text-transform: uppercase;
+
+            &-decoration {
+                font-weight: 700;
+                display: block;
+            }
+        }
+
+        &-social {
+            width: 48.5%;
+            background: $blue01;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &-item {
+                & + & {
+                    margin-left: 55px;
+                }
+            }
+
+            &-link {
+                color: $white01;
+                font-size: 38px;
+            }
+        }
+    }
+
+    &-copyright {
+        @include site_width($site_width);
+        @include clearfix;
+
+        padding: 15px 15%;
+
+        &-wrapper {
+            background: $black03;
+        }
+
+        &-content {
+            @include text-styles(13px, 400, $grey07)
+        }
+
+        &-trademark {
+            float: left;
+        }
+
+        &-produced_by {
+            float: right;
+        }
+    }
+}

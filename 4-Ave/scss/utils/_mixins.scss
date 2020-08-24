@@ -1,0 +1,143 @@
+@mixin clearfix () {
+   &::after {
+      content:"";
+      display: block;
+      clear: both;
+   }
+}
+
+@function calc_percent ($block_width) {
+   @return ($block_width/$width)*100%;
+}
+
+@mixin position_top_left ($position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
+@mixin position_bottom_left ($position, $bottom, $left) {
+   position: $position;
+   bottom: $bottom;
+   left: $left;   
+}
+
+@mixin position_bottom_right ($position, $bottom, $right) {
+   position: $position;
+   bottom: $bottom;
+   right: $right;
+}
+
+@mixin justify () {
+        text-align: justify;
+
+    ::after{
+       content: '';
+       display: inline-block;
+       width: 100%;
+       font-size: 0;
+    }
+}
+
+@mixin site_width($width) {
+   margin: 0 auto;
+   max-width: $width;
+   width: 100%;
+}
+
+@mixin align ($block_type, $align_type) {
+   display: $block_type;
+   vertical-align: $align_type;
+}
+
+@mixin first-child () {
+   :first-child{
+     margin-left: 0;
+   }
+}
+
+@mixin text-styles($size, $weight, $color) {
+       font-size: $size;
+       font-weight: $weight;
+       color: $color;
+}
+
+@mixin block_width_perc ($block_width) {
+   width: ($block_width/980)*100%;
+}
+
+@mixin centering_XY () {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+@mixin button ($color: $color-main, $bgColor: $color-accent){
+  color: $color;
+  border: none;
+  background-color: $bgColor;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 15px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+@mixin input-group {
+  position: relative;
+}
+
+@mixin input ($color: $color-primary, $bgColor: $color-shadow) {
+  color: $color;
+  background-color: $bgColor;
+  height: 40px;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+}
+
+@mixin input-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;
+}
+
+@mixin respond_to($device) {
+   @if($device==mobile) {
+      @media(min-width: $mobile + px) and (max-width: $tablet - 1 + px) {
+         @content;
+      }
+   }
+
+   @else if($device==tablet) {
+         @media (min-width: $tablet + px) and (max-width: $desktop - 1 + px) {
+            @content;
+         }
+      }
+
+      @else if($device==desktop) {
+         @media(min-width: $desktop + px) {
+            @content;   
+         }
+      }
+
+      @else if($device==to_desktop) {
+         @media(min-width: $mobile + px) and (max-width: $desktop - 1 + px) {
+            @content;
+         }
+      }
+
+      @else if($device==from_tablet) {
+         @media(min-width: $tablet + px) {
+            @content;
+         }
+      }
+   }

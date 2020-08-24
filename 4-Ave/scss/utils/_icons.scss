@@ -1,0 +1,116 @@
+@font-face {
+	font-family: "Icons";
+	src: url('../fonts/Icons.eot');
+	src: url('../fonts/Icons.eot?#iefix') format('eot'),
+		url('../fonts/Icons.woff2') format('woff2'),
+		url('../fonts/Icons.woff') format('woff'),
+		url('../fonts/Icons.ttf') format('truetype'),
+		url('../fonts/Icons.svg#Icons') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "Icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == facebook-f-brands {
+		$char: "\E001";
+	}
+	@if $filename == heart {
+		$char: "\E002";
+	}
+	@if $filename == instagram {
+		$char: "\E003";
+	}
+	@if $filename == link {
+		$char: "\E004";
+	}
+	@if $filename == location {
+		$char: "\E005";
+	}
+	@if $filename == mail {
+		$char: "\E006";
+	}
+	@if $filename == pinterest {
+		$char: "\E007";
+	}
+	@if $filename == search {
+		$char: "\E008";
+	}
+	@if $filename == shopping-cart-black-shape {
+		$char: "\E009";
+	}
+	@if $filename == tel {
+		$char: "\E00A";
+	}
+	@if $filename == time {
+		$char: "\E00B";
+	}
+	@if $filename == twitter-brands {
+		$char: "\E00C";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-facebook-f-brands {
+	@include icon(facebook-f-brands);
+}
+.icon-heart {
+	@include icon(heart);
+}
+.icon-instagram {
+	@include icon(instagram);
+}
+.icon-link {
+	@include icon(link);
+}
+.icon-location {
+	@include icon(location);
+}
+.icon-mail {
+	@include icon(mail);
+}
+.icon-pinterest {
+	@include icon(pinterest);
+}
+.icon-search {
+	@include icon(search);
+}
+.icon-shopping-cart-black-shape {
+	@include icon(shopping-cart-black-shape);
+}
+.icon-tel {
+	@include icon(tel);
+}
+.icon-time {
+	@include icon(time);
+}
+.icon-twitter-brands {
+	@include icon(twitter-brands);
+}

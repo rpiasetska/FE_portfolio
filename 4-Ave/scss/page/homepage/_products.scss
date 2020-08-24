@@ -1,0 +1,60 @@
+.products {
+    @include site_width($site_width);
+    margin-bottom: 50px;
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-price {
+        @include text-styles(21px, 300, $grey10);
+
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    &-item {
+        width: 23.5%;
+
+        &:hover .products-info {
+            visibility: visible;
+        }
+
+        &:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    }
+
+    &-info {
+        visibility: hidden;
+        text-align: center;
+        padding: 20px 13%;
+        border-top: 1px solid $grey06;
+    }
+
+    &-image {
+        width: 100%;
+        height: 100%;
+
+        &-wrapper {
+            max-height: 500px;
+            position: relative;
+        }
+    }
+
+    &-title {
+        @include text-styles(13px, 400, $grey02);
+
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &-description {
+        @include text-styles(15px, 400, $grey03);
+
+        font-family: 'Roboto', sans-serif;
+        line-height: 24px;
+    }
+}

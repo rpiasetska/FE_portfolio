@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, input, button, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    
+    &:focus { 
+      outline: none;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+input {
+    &:focus {
+      outline: none;
+    }
+}

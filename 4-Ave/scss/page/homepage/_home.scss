@@ -1,0 +1,17 @@
+.banner {
+    background: url(../img/home_banner.jpg) center no-repeat;
+    background-size: cover;
+    height: 920px;
+    position: relative;
+    margin-bottom: 155px;
+
+    &-link {
+        display: block;
+
+        &-wrapper {
+            position: absolute;
+            bottom: 120px;
+            right: 16%;
+        }
+    }
+}

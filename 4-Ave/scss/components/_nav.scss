@@ -1,0 +1,25 @@
+.nav {
+    margin-right: 115px;
+
+    &-list {
+        font-size: 0;
+    }
+
+    &-item {
+        display: inline-block;
+
+        & + & {
+            margin-left: 55px;
+        }
+    }
+
+    &-link {
+        @include text-styles(13px, 400, $grey01);
+
+        text-transform: uppercase;
+
+        &:hover {
+            color: $blue01;
+        }
+    }
+}

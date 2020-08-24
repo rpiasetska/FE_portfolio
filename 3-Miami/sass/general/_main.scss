@@ -1,0 +1,44 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    @include site_width(940px);
+
+    position: relative;
+}
+
+.blue-font_colour {
+    color: $blue01;
+}
+
+.font-style-bold {
+    font-weight: bold;
+}
+
+.title {
+    border-bottom: 2px solid $blue01;
+    padding-bottom: 10px;
+    position: relative;
+    
+    &::after {
+        content: "";
+        @include position_bottom_left (absolute, -20px, 50%);
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        background: $white01 url(../img/headline-icon.png) no-repeat center;
+        background-size: contain;
+        border: 5px solid $white01;
+        border-radius: 50px;
+    }
+    
+    &-wrapper {
+        @include position_top_left (absolute, 0, 50%);
+        @include text-styles(48px, $light, $black01);
+        
+        text-align: center;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+    }
+}

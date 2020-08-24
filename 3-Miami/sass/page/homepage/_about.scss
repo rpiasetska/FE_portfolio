@@ -1,0 +1,40 @@
+.about {
+    background: #FFFFFF;
+    padding: 130px 0 160px 0;
+
+    .container {
+        @include clearfix();
+    }
+
+    &-resume {
+        @include text-styles(48px, $light, $black01);
+        @include block_width_perc(300);
+
+        text-transform: uppercase;
+        line-height: 60px;
+        float: left;
+    }
+
+    &-description {
+        
+        &-wrapper {
+            @include block_width_perc(545);
+            @include text-styles(16px, $medium, $black01);
+
+            float: right;
+            line-height: 26px;
+        }
+
+        &-list {
+            margin: 35px 0 45px 0;
+            padding: 0;
+            padding: 0 125px 0 0;
+            line-height: 18px;
+        }
+
+        &-item {
+            list-style: decimal;
+            margin-bottom: 5px;
+        }
+    }
+}

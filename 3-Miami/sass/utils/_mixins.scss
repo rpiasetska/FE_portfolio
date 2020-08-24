@@ -1,0 +1,61 @@
+@mixin clearfix () {
+    &::after{
+     content:"";
+     display: block;
+     clear: both;
+     width: 100%;
+    }
+ }
+
+ @mixin position_top_left ($position, $top, $left) {
+     position: $position;
+     top: $top;
+     left: $left;
+ }
+
+ @mixin position_bottom_left ($position, $bottom, $left) {
+    position: $position;
+    bottom: $bottom;
+    left: $left;
+}
+
+ @mixin justify () {
+     & {
+         text-align: justify;
+     }
+     &::after{
+        content: '';
+        display: inline-block;
+        width: 100%;
+        font-size: 0;
+     }
+ }
+
+ @mixin site_width($width) {
+    margin: 0 auto;
+    max-width: $width;
+    width: 100%;
+ }
+
+ @mixin align ($block_type, $align_type) {
+    display: $block_type;
+    vertical-align: $align_type;
+}
+
+@mixin first-child () {
+    &:first-child{
+      margin-left: 0;
+    }
+}
+
+@mixin text-styles($size, $weight, $color) {
+    &{
+        font-size: $size;
+        font-weight: $weight;
+        color: $color;
+    }
+}
+
+@mixin block_width_perc ($block_width) {
+    width: ($block_width/940)*100%;
+}

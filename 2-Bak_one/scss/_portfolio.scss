@@ -1,0 +1,47 @@
+.portfolio {
+    text-align: center;
+    background: $white;
+    padding-bottom: 25px;
+    
+    &-menu {
+        font-size: 0;
+        margin-left: -15px;
+
+        &-item {
+            display: inline-block;
+            background: $green;
+            margin-left: 15px;
+            :hover {
+                background: $darkgreen;
+            }
+        }
+
+        &-link {
+            @include text-styles(13px, 700, $white);
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 15px 12px;
+        }
+
+        &-wrapper {
+            padding: 35px 0 45px 0;
+        }
+    }
+}
+
+.gallery {
+    &-images {
+        font-size: 0;
+        margin-right: -55px;
+        
+        &-item {
+            display: inline-block;
+            width: 19%;
+            margin-right: 55px;
+            margin-bottom: 35px;
+            :hover {
+                filter: grayscale(100%);
+            }
+        }        
+    }
+}

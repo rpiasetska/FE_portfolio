@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, input, button, body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+}
+
+.main-title {
+  padding: 55px 0 20px 0;
+}
+
+.main-title {
+  font-size: 28px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.about .main-title {
+  color: #FFFFFF;
+}
+
+.main-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #737373;
+}
+
+.about .main-description {
+  color: #FFFFFF;
+}
+
+.logo {
+  text-transform: uppercase;
+  display: block;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #444444;
+}
+
+.logo-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.logo-image-wrapper {
+  width: 49px;
+  height: 47px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-description {
+  display: block;
+}
+
+.logo-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #CFCDCC;
+}
+
+.nav {
+  font-size: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item:first-child {
+  margin-left: 0;
+}
+
+.nav-item :hover {
+  background: #1BBC9B;
+  color: #FFFFFF;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+  line-height: 40px;
+  display: block;
+  padding: 0 10px;
+}
+
+.nav-wrapper {
+  float: right;
+}
+
+.header {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 25px 0 22px 0;
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+}
+
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  display: inline-block;
+  padding-bottom: 44.6%;
+}
+
+.banner-image {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.banner-title {
+  padding: 80px 0 40px 0;
+}
+
+.banner-title {
+  font-size: 55px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.banner-title-bold {
+  font-weight: 700;
+}
+
+.banner-description {
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.banner-text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 54%;
+  right: 0;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.portfolio {
+  text-align: center;
+  background: #FFFFFF;
+  padding-bottom: 25px;
+}
+
+.portfolio-menu {
+  font-size: 0;
+  margin-left: -15px;
+}
+
+.portfolio-menu-item {
+  display: inline-block;
+  background: #1BBC9B;
+  margin-left: 15px;
+}
+
+.portfolio-menu-item :hover {
+  background: #16A086;
+}
+
+.portfolio-menu-link {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 12px;
+}
+
+.portfolio-menu-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.portfolio-menu-wrapper {
+  padding: 35px 0 45px 0;
+}
+
+.gallery-images {
+  font-size: 0;
+  margin-right: -55px;
+}
+
+.gallery-images-item {
+  display: inline-block;
+  width: 19%;
+  margin-right: 55px;
+  margin-bottom: 35px;
+}
+
+.gallery-images-item :hover {
+  filter: grayscale(100%);
+}
+
+.about {
+  text-align: center;
+  background: #1BBC9B;
+  padding-bottom: 75px;
+}
+
+.about.main-title {
+  font-size: 28px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.profiles-wrapper {
+  width: 780px;
+  margin-left: 5%;
+}
+
+.profile {
+  font-size: 0;
+  margin-top: 45px;
+}
+
+.profile-info {
+  background: #FFFFFF;
+  padding: 20px 10px;
+}
+
+.profile-item {
+  display: inline-block;
+  width: 28%;
+  margin-left: 8%;
+  vertical-align: top;
+}
+
+.profile-item:first-child {
+  margin-left: 0;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.profile-position {
+  margin: 10px 0 20px 0;
+}
+
+.profile-position {
+  font-size: 14px;
+  font-weight: 400i;
+  color: #737373;
+}
+
+.profile-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+}

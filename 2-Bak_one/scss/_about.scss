@@ -1,0 +1,45 @@
+.about {
+    text-align: center;
+    background: $green;
+    padding-bottom: 75px;
+
+    &.main-title {
+        @include text-styles(28px, 400, $white);
+    }
+}
+
+.profiles-wrapper {
+    width: 780px;
+    margin-left: 5%;
+}
+
+.profile {
+    font-size: 0;
+    margin-top: 45px;
+    
+    &-info {
+        background: $white;
+        padding: 20px 10px;
+    }
+
+    &-item {
+        display: inline-block;
+        width: 28%;
+        margin-left: 8%;
+        vertical-align: top;
+        @include first-child();
+    }
+
+    &-name {
+        @include text-styles(18px, 400, $darkgrey);
+    }
+
+    &-position {
+        @include text-styles(14px, 400i, $grey);
+        margin: 10px 0 20px 0;
+    }
+
+    &-description {
+        @include text-styles(14px, 400, $grey);
+    }
+}

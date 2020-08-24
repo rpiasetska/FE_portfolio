@@ -1,0 +1,27 @@
+.nav {
+    font-size: 0;
+    
+    &-item {
+        display: inline-block;
+        @include first-child();
+
+        :hover {
+            background: $green;
+            color: $white;
+        }
+    }
+
+    &-link {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        color: $grey;
+        line-height: 40px;
+        display: block;
+        padding: 0 10px;
+    }
+
+    &-wrapper {
+        float: right;
+    }
+}

@@ -1,0 +1,21 @@
+.logo {
+    text-transform: uppercase;
+    @include text-styles(20px, 700, $darkgrey);
+    display: block;
+
+    &-text {
+        @include align (inline-block, middle);
+        margin-left: 15px;
+    }
+
+    &-image-wrapper {
+        width: 49px;
+        height: 47px;
+        @include align (inline-block, middle);
+    }
+    
+    &-description {
+        display: block;
+        @include text-styles(14px, 400, $lightgrey);
+    }
+}

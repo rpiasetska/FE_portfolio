@@ -1,0 +1,28 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+    width: 100%;
+}
+
+.main {
+    &-title {
+        @include text-styles(28px, 400, $darkgrey);
+        padding: 55px 0 20px 0;
+
+        .about & {
+            color: $white;
+        }
+    }
+
+    &-description {
+        @include text-styles(16px, 400, $grey);
+        
+        .about & {
+            color: $white;
+        }
+    }
+}

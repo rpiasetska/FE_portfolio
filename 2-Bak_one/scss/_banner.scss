@@ -1,0 +1,39 @@
+.banner {
+    width: 100%;
+    position: relative;
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        padding-bottom: 44.6%;
+    }
+
+    &-image {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &-title {
+        @include text-styles(55px, 300, $white);
+        padding: 80px 0 40px 0;
+        &-bold {
+            font-weight: 700;
+        }
+    }
+
+    &-description {
+        @include text-styles(18px, 300, $white);
+    }
+
+    &-text-wrapper {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 54%;
+        right: 0;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}

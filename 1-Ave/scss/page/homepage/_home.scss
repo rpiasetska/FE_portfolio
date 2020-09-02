@@ -15,3 +15,18 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px){
+    .banner {
+        // background: $grey05;
+        height: 500px;
+        margin-bottom: 80px;
+
+        &-link {
+            &-wrapper {
+                // display: none;
+                bottom: 60px;
+            }
+        }
+    }
+}

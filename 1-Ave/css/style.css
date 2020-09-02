@@ -217,7 +217,7 @@ input:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 0 50px;
+  padding: 35px 10px 50px;
 }
 
 .header-home {
@@ -226,7 +226,6 @@ input:focus {
   left: 0;
   right: 0;
   z-index: 999;
-  padding: 0;
 }
 
 .header-inner {
@@ -264,6 +263,22 @@ input:focus {
   color: #989898;
 }
 
+@media screen and (max-width: 1200px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .header-inner {
+    align-self: flex-end;
+    flex-direction: column-reverse;
+    margin-top: -70px;
+  }
+  .header-search {
+    align-self: flex-end;
+  }
+}
+
 .logo-link {
   font-size: 24px;
   font-weight: 400;
@@ -276,7 +291,7 @@ input:focus {
 }
 
 .nav {
-  margin-right: 115px;
+  margin-right: 80px;
 }
 
 .nav-list {
@@ -300,6 +315,13 @@ input:focus {
 
 .nav-link:hover {
   color: #00C8C8;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    margin-right: 0;
+    margin-top: 10px;
+  }
 }
 
 .footer {
@@ -426,6 +448,29 @@ input:focus {
   float: right;
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-information {
+    padding: 50px 0 30px 0;
+  }
+  .footer-information-title {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .footer-information-link, .footer-information-details {
+    font-size: 11px;
+  }
+  .footer-information-item {
+    margin: 5px 0;
+  }
+  .footer-public {
+    margin-bottom: 45px;
+  }
+  .footer-public-award {
+    font-size: 32px;
+    padding: 50px 0;
+  }
+}
+
 /** PAGES **/
 .banner {
   background: url(../img/home_banner.jpg) center no-repeat;
@@ -443,6 +488,16 @@ input:focus {
   position: absolute;
   bottom: 120px;
   right: 16%;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner {
+    height: 500px;
+    margin-bottom: 80px;
+  }
+  .banner-link-wrapper {
+    bottom: 60px;
+  }
 }
 
 .products {
@@ -511,6 +566,25 @@ input:focus {
   line-height: 24px;
 }
 
+@media screen and (max-width: 1200px) {
+  .products {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    margin-bottom: 130px;
+  }
+  .products-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .products-item {
+    width: 45%;
+  }
+}
+
 .lookbook {
   margin-bottom: 145px;
 }
@@ -543,7 +617,7 @@ input:focus {
 }
 
 .lookbook-title {
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 300;
   color: #575153;
   text-transform: uppercase;
@@ -565,6 +639,24 @@ input:focus {
 
 .lookbook-link-wrapper {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .lookbook {
+    margin-bottom: 100px;
+  }
+  .lookbook-title {
+    font-size: 24px;
+  }
+  .lookbook-link {
+    font-size: 10px;
+  }
+  .lookbook-description {
+    font-size: 12px;
+  }
+  .lookbook-item {
+    padding-top: 15px;
+  }
 }
 
 .stores {

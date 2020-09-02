@@ -106,3 +106,33 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        &-information {
+            padding: 50px 0 30px 0;
+
+            &-title {
+                font-size: 12px;
+                margin-bottom: 15px;
+            }
+
+            &-link,
+            &-details {
+                font-size: 11px;
+            }
+
+            &-item {
+                margin: 5px 0;
+            }
+        }
+
+        &-public {
+            margin-bottom: 45px;
+            &-award {
+                font-size: 32px;
+                padding: 50px 0;
+            }
+        }
+    }
+}

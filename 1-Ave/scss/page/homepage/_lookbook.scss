@@ -29,7 +29,7 @@
     }
 
     &-title {
-        @include text-styles (48px, 300, $grey04);
+        @include text-styles (30px, 300, $grey04);
         
         text-transform: uppercase;
         padding-top: 55px;
@@ -50,6 +50,27 @@
     &-link {
         &-wrapper {
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .lookbook {
+        margin-bottom: 100px;
+        &-title {
+            font-size: 24px;
+        }
+
+        &-link {
+            font-size: 10px;
+        }
+
+        &-description {
+            font-size: 12px;
+        }
+
+        &-item {
+            padding-top: 15px;
         }
     }
 }

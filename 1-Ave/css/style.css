@@ -521,10 +521,6 @@ input:focus {
   left: 15px;
 }
 
-.products-item {
-  width: 23.5%;
-}
-
 .products-item:hover .products-info {
   visibility: visible;
 }
@@ -671,6 +667,7 @@ input:focus {
 @media screen and (max-width: 767px) {
   .lookbook-list {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 

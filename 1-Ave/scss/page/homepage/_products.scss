@@ -21,7 +21,10 @@
         &:hover .products-info {
             visibility: visible;
         }
+    }
 
+    &-link {
+        display: block;
         &:hover {
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
@@ -65,17 +68,22 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .products {
-        margin-bottom: 130px;
+        margin-bottom: 5px;
 
         &-list {
             flex-wrap: wrap;
             justify-content: space-around;
         }
+        &-info {
+            display: none;
+        }
 
         &-item {
-            width: 45%;
+            max-width: 300px;
+            min-width: 200px;
+            margin-bottom: 20px;
         }
     }
 }

@@ -529,7 +529,11 @@ input:focus {
   visibility: visible;
 }
 
-.products-item:hover {
+.products-link {
+  display: block;
+}
+
+.products-link:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -572,16 +576,21 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .products {
-    margin-bottom: 130px;
+    margin-bottom: 5px;
   }
   .products-list {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .products-info {
+    display: none;
+  }
   .products-item {
-    width: 45%;
+    max-width: 300px;
+    min-width: 200px;
+    margin-bottom: 20px;
   }
 }
 
@@ -656,6 +665,12 @@ input:focus {
   }
   .lookbook-item {
     padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lookbook-list {
+    flex-wrap: wrap;
   }
 }
 

@@ -1,8 +1,7 @@
 .nav {
-    font-size: 0;
+    display: flex;
     
     &-item {
-        display: inline-block;
         @include first-child();
 
         :hover {
@@ -19,9 +18,5 @@
         line-height: 40px;
         display: block;
         padding: 0 10px;
-    }
-
-    &-wrapper {
-        float: right;
     }
 }

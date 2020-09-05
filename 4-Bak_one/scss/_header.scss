@@ -5,8 +5,7 @@
     margin: 0 auto;
     max-width: 940px;
     width: 100%;
-}
-
-.navbar {
-    @include clearfix();
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

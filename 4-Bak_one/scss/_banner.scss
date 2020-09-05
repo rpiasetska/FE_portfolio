@@ -1,6 +1,7 @@
 .banner {
     width: 100%;
     position: relative;
+    min-height: 400px;
     
     &::after {
         content: "";
@@ -35,5 +36,29 @@
         right: 0;
         transform: translateX(-50%);
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner {
+        &-title {
+            font-size: 46px;
+        }
+
+        &-text-wrapper {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner {
+        &-description {
+            font-size: 16px;
+        }
+
+        &-title {
+            font-size: 36px;
+        }
     }
 }

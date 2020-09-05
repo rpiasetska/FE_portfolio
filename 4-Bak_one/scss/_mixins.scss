@@ -1,12 +1,3 @@
-@mixin clearfix (){
-    &::after{
-     content:"";
-     display: block;
-     clear: both;
-     width: 100%;
-    }
- }
-
  @mixin align ($block_type, $align_type) {
     display: $block_type;
     vertical-align: $align_type;

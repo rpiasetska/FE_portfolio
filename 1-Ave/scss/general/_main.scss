@@ -31,7 +31,7 @@
         }
 
         &:focus {
-            border: 1px solid $red01;
+            border: 1px solid $green01;
             background: $white02;
         }
     }
@@ -86,4 +86,12 @@
 .icon-link,
 .icon-time {
     margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        &-banner {
+            display: none;
+        }
+    }
 }

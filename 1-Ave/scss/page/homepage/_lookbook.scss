@@ -3,15 +3,17 @@
 
     &-list {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     &-item {
         display: flex;
-        padding: 45px 1.5% 0 1%;
+        padding: 45px 1%;
         justify-content: space-between;
         background:$grey05;
-        width: 32%;
+        max-width: 600px;
+        min-width: 300px;
         position: relative;
     }
 
@@ -41,7 +43,7 @@
     }
 
     &-description {
-        @include text-styles(15px, 400, $grey02);
+        @include text-styles(16px, 400, $grey02);
 
         font-family: 'Roboto', sans-serif;
         margin: 30px 0;
@@ -56,17 +58,17 @@
 
 @media screen and (max-width:1200px) {
     .lookbook {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         &-title {
             font-size: 24px;
         }
 
         &-link {
-            font-size: 10px;
+            font-size: 12px;
         }
 
         &-description {
-            font-size: 12px;
+            font-size: 16px;
         }
 
         &-item {
@@ -75,10 +77,8 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 375px) {
     .lookbook {
-        &-list {
-            flex-wrap: wrap;
-        }
+        margin-bottom: 0;
     }
 }

@@ -18,14 +18,35 @@
 
 @media screen and (max-width: 1200px){
     .banner {
-        // background: $grey05;
+        
         height: 500px;
         margin-bottom: 80px;
 
         &-link {
             &-wrapper {
-                // display: none;
                 bottom: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner {
+        background: $grey05;
+        height: 250px;
+
+        &-link {
+           font-size: 12px;
+           padding: 10px 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner {
+        &-link {
+            &-wrapper {
+                right: 5%;
             }
         }
     }

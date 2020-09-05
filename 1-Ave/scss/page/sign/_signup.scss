@@ -1,8 +1,9 @@
 .sign_up {
-    @include clearfix;
     @include site_width($site_width);
     padding: 105px 15% 80px 15%;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     &-form {
         &-title {
@@ -11,25 +12,20 @@
             text-transform: uppercase;
         }
 
-        &-register {
-            width: 47%;
-            float: right;
-        }
-
+        &-register, 
         &-log_in {
-            width: 47%;
-            float: left;
+            width: 45%;
+            min-width: 250px;
         }
     }
-}
 
-.sign_up {
     &-forgot {
         &-link {
             @include text-styles(15px, 400, $grey08);
 
-            float: right;
+            display: block;
             padding-top: 20px;
+            padding-bottom: 50px;
 
             &:hover {
                 color: $blue01;
@@ -38,13 +34,10 @@
     }
 
     &-submit {
-        float: left;
         vertical-align: middle;
     }
 
     &-control {
-        @include clearfix;
-
         margin-top: 30px;
     }
 }
@@ -59,8 +52,6 @@
 
         font-family: 'Roboto', sans-serif;
         position: relative;
-        padding-left: 20px;
-        margin-left: 10px;
 
         &::before {
             content: '';
@@ -99,4 +90,17 @@
     &-checkbox {
         display: none;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .sign_up {
+        &-form {
+            &-register, 
+            &-log_in {
+                width: 90%;
+                min-width: 250px;
+                text-align: center;
+            }
+        }
+    }    
 }

@@ -10,3 +10,13 @@
         font-weight: 600;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .logo {
+        margin-right: 5%;
+
+        &-link {
+            font-size: 28px;
+        }
+    }
+}

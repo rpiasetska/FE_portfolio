@@ -54,6 +54,11 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
+    // margin-top: 45px;
+
+    &-addition {
+        margin-top: 45px;
+    }
 
      &-inner {
         align-self: flex-end;
@@ -65,4 +70,14 @@
          align-self: flex-end;
      }
  }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        flex-direction: row-reverse;
+        &-inner {
+            margin-top: -40px;
+            align-items: flex-start;
+        }
+    }
 }

@@ -1,7 +1,7 @@
 .stores {
     @include site_width($site_width);
 
-    padding: 60px 15%;
+    padding: 10px 15% 60px 15%;
 
     &-title {
         @include text-styles(18px, 400, $grey04);
@@ -28,14 +28,16 @@
     &-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     &-item {
         @include text-styles(15px, 400, $grey09);
 
-        width: 32%;
+        width: 30%;
+        min-width: 200px;
         font-family: 'Roboto', sans-serif;
+        margin-top: 50px;
     }
 
     &-link {
@@ -43,6 +45,17 @@
 
         &-wrapper {
             margin-top: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .stores {
+        padding-bottom: 0;
+
+        &-item {
+            width: 90%;
+            max-width: 350px;
         }
     }
 }

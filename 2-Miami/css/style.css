@@ -50,7 +50,7 @@ body {
 
 .title {
   border-bottom: 2px solid #00AAEF;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   position: relative;
 }
 
@@ -60,7 +60,7 @@ body {
   bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
+  width: 22px;
   height: 20px;
   background: #FFFFFF url(../img/headline-icon.png) no-repeat center;
   background-size: contain;
@@ -79,108 +79,11 @@ body {
 
 .title-wrapper {
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 300;
   color: #000000;
 }
 
 /** COMPONENTS **/
-.header {
-  background: url(../img/header-bg.jpg) no-repeat;
-  background-size: cover;
-  height: 770px;
-}
-
-.header .container {
-  height: 100%;
-}
-
-.contacts {
-  padding: 100px 0;
-}
-
-.contacts {
-  font-size: 16px;
-  font-weight: 400;
-  color: #9FA0B3;
-}
-
-.contacts::after {
-  content: "";
-  display: block;
-  clear: both;
-  width: 100%;
-}
-
-.contacts-phone {
-  float: left;
-  width: 35%;
-  cursor: pointer;
-}
-
-.contacts-call-link {
-  text-transform: uppercase;
-  width: 35%;
-  cursor: pointer;
-}
-
-.contacts-call-link:hover {
-  padding-bottom: 5px;
-  border-bottom: 2px dashed #9FA0B3;
-}
-
-.contacts-call-link-wrapper {
-  float: right;
-}
-
-.logo-wrapper {
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  width: 115px;
-  height: 80px;
-  transform: translateX(-50%);
-}
-
-.nav {
-  font-size: 0;
-}
-
-.nav {
-  text-align: justify;
-}
-
-.nav::after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-  font-size: 0;
-}
-
-.nav-item {
-  display: inline-block;
-}
-
-.nav-link {
-  text-transform: uppercase;
-}
-
-.nav-link {
-  font-size: 16px;
-  font-weight: 400;
-  color: #FFFFFF;
-}
-
-.nav-link:hover {
-  color: #00AAEF;
-}
-
-.nav-wrapper {
-  position: absolute;
-  bottom: 60px;
-  left: 0;
-  right: 0;
-}
-
 .footer {
   height: 540px;
   background: url(../img/footer-bg.jpg) no-repeat;
@@ -224,13 +127,13 @@ body {
 .about-resume {
   width: 31.91489%;
   text-transform: uppercase;
-  line-height: 61px;
+  line-height: 60px;
   float: left;
 }
 
 .about-resume {
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 300;
   color: #000000;
 }
 

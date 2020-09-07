@@ -5,6 +5,10 @@
 /** GENERAL **/
 @import 'general/_reset.scss';
 @import 'general/_main.scss';
-@import 'general/_footer.scss';
+/** COMPONENTS **/
+@import 'components/_header.scss';
+@import 'components/_logo.scss';
+@import 'components/_nav.scss';
+@import 'components/_footer.scss';
 /** PAGES **/
 @import 'page/_homepage.scss';

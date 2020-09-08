@@ -123,6 +123,11 @@ button {
     opacity: 0.7;
 }
 
+.gallery-main-image {
+    border: 2px solid #fa8f37;
+    border-radius: 5px;
+}
+
 .gallery-images {
     width: 65%;
     display: flex;
@@ -133,6 +138,8 @@ button {
 .gallery-images-item {
     width: 23%;
     margin-bottom: 20px;
+    border: 2px solid #fa8f37;
+    border-radius: 5px;
 }
 
 .services_testimonials-wrapper {
